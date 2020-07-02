@@ -1,0 +1,70 @@
+body {
+    background-image: url(../images/Chalkboard-Background.jpg) ;
+}
+
+.header {
+    margin: 10px;
+    text-align: center;
+    font-family: 'MuseoModerno', cursive;
+    font-size: 50px;
+    -webkit-text-stroke: 1.5px rgba(253, 254, 255, 0.945); 
+}
+
+#results {
+    min-height: 50px;
+    color:rgb(255, 254, 242);
+    font-family: 'Rock Salt', cursive;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#playAgain {
+    border: 1px solid rgb(238, 233, 233);
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+#board {
+    display: flex ;
+    grid-template-columns: repeat(3,115px [col-start]);
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    max-width: 360px;
+    margin: 50px auto;   
+}
+
+.game-square {
+    flex-basis: 33.3%;
+    width: 115px;
+    height: 115px;
+    /* margin: auto; */
+    /* padding: 20px 40px; */
+    font-family: 'Rock Salt', cursive;
+    font-size: 40px;
+    font-weight: 800;
+    color: floralwhite;
+    text-align: center;
+    caret-color: transparent !important;
+}
+
+.middle-column {
+    border-right: 2px solid snow;
+    border-left: 2px solid snow;
+    
+}
+
+.middle-row {
+    border-top: 2px solid snow;
+    border-bottom: 2px solid snow;
+}
+
+/* Small screens */
+@media all and (max-width: 360px) {
+  .navigation {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}

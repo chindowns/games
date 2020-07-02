@@ -1,0 +1,82 @@
+body{
+    color: white;
+font-family: 'Arvo', serif;
+background-image: url("./greenFelt.jpeg");
+background-size: 1400px;
+}
+
+.red{
+    color: crimson;
+}
+
+.white{
+    color: white;
+    border: solid 2px grey;
+}
+
+.black{
+    color: black;
+}
+
+.yellow {
+    color: khaki;
+    /* color:  #E3CF57; */
+}
+
+header>h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    margin: auto;
+    padding: 30px auto;
+    font-family: 'Righteous', cursive;
+}
+
+#scoreBoard {
+    display: flex;
+    max-width: 375px;
+    align-items: center;
+    flex-flow: row;
+    margin: auto;
+}
+
+.score {
+    flex-basis: 30%;
+    width: 112px;
+    font-size: 20px;
+    font-weight: 300px;
+    text-align: center;
+}
+
+.player {
+    flex-basis: 40%;
+    width: 151px;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.winner {
+    flex-basis: 40%;
+    width: 151px;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: violet;
+    font-family: 'Righteous', cursive;
+    margin: auto;
+    padding: 0px;
+}
+
+td{
+    border: solid 1px khaki;
+}
+
+#board{
+    background-color: khaki;
+    border-collapse: collapse;
+    margin: 25px auto;
+
+}
+
